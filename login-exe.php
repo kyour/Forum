@@ -12,11 +12,11 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		$query_num_rows = mysql_num_rows($query_run);
 		if($query_num_rows==1)
 		{
-		echo 'Logged in';
+		echo 'True';
 		}
 		else
 		{
-		echo 'LogIn is not Good';
+		echo 'Incorrect Email or Password';
 		}
 }
 
