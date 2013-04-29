@@ -36,13 +36,6 @@ $(function(){
 		event.preventDefault();
 		var $a = document.forms["logIn-form"]["email"].value;
 		var $b = document.forms["logIn-form"]["password"].value;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
-=======
->>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 		if ($a ==null || $a == ''){
 			$('.login-error').empty().append('Please provide Email');
 			return false;
@@ -50,17 +43,9 @@ $(function(){
 			$('.login-error').empty().append('Please provide Password');
 			return false;
 			}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 		if ($a == '' || $b == ''){
 			$('.results').empty().append('Please provide Email and Password');
 		}
->>>>>>> some tweaks in css, js, login and registration files
-=======
->>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
-=======
->>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 		else {
 			var data_string = $(this).serialize()
 			$.ajax({
