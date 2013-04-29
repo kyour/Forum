@@ -47,8 +47,12 @@ $(function(){
 				url: "login-exe.php",
 				data: data_string,
 				success: function(data){
-					$('.results').empty().append(data);
-				}
+					if (data == 'LogIn is not Good'){
+						$('.results').empty().append(data);
+					}
+					else{
+						window.location = 'page.php';
+					}				}
 			});// -------ajax end
 		};// -------else end
 	});// -------.submit function end

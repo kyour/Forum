@@ -11,14 +11,9 @@ $_password=md5($_pass);
 $queryemail=mysql_query("SELECT * FROM user WHERE user_email='$_email' ");
 $checkemail=mysql_num_rows($queryemail);
 if($checkemail == 1){
-<<<<<<< HEAD
 	echo "Sorry, ".$_email." is already registered.";
 }
 else{
-=======
-	 echo "Sorry, ".$_email." is already registered."; 
-}else{
->>>>>>> updated Html and css to improve layout
 $userquery=mysql_query("INSERT INTO user (user_firstname, user_lastname, user_password, user_email) VALUES ('$_firstname', '$_lastname', '$_password', '$_email')");
 if ($userquery){
 	echo 'Registration Done';
