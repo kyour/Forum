@@ -8,13 +8,13 @@ $(function(){
 	var b = $('#last-name').val();
 	var c = document.getElementById('password').value;
 	var e = document.getElementById('email').value;*/
-		var $a = $('#password').val();
-		var $b = $('#confirmPassword').val();
+		var $a = document.forms["reg-form"]["email"].value;
+		var $b = document.forms["reg-form"]["password"].value;
 		if ($a.length<8){
-			$('.results').empty().append('Password must be 8 characters')
+			$('.reg-error').empty().append('Password must be 8 characters')
 		}
 		else if ($a != $b) {
-				$('.results').empty().append('Confirm does not match')
+				$('.reg-error').empty().append('Password does not match')
 			}// -------else if end
 		else {
 				var data_string = $(this).serialize()/*'first-name='+ a +'&last-name='+ b +'&password='+ c +'&email='+ e*/;
@@ -24,7 +24,7 @@ $(function(){
 						url: "registration-exe.php",
 						data: data_string,
 						success: function(data){
-							$('.results').empty().append(data);
+							$('.reg-error').empty().append(data);
 						}
 					});// -------ajax end	
 			}// -------else end
@@ -36,9 +36,19 @@ $(function(){
 		event.preventDefault();
 		var $a = document.forms["logIn-form"]["email"].value;
 		var $b = document.forms["logIn-form"]["password"].value;
+<<<<<<< HEAD
+		if ($a ==null || $a == ''){
+			$('.login-error').empty().append('Please provide Email');
+			return false;
+		} else if ($b == null || $b == ''){
+			$('.login-error').empty().append('Please provide Password');
+			return false;
+			}
+=======
 		if ($a == '' || $b == ''){
 			$('.results').empty().append('Please provide Email and Password');
 		}
+>>>>>>> some tweaks in css, js, login and registration files
 		else {
 			var data_string = $(this).serialize()
 			$.ajax({
@@ -47,8 +57,8 @@ $(function(){
 				url: "login-exe.php",
 				data: data_string,
 				success: function(data){
-					if (data == 'LogIn is not Good'){
-						$('.results').empty().append(data);
+					if (data == 'Incorrect Email or Password'){
+						$('.login-error').empty().append(data);
 					}
 					else{
 						window.location = 'page.php';
