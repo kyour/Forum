@@ -34,8 +34,8 @@ $(function(){
 /*-------------------------------------------Login Form Starts--------------------------------------------------*/
 	$('#logIn-form').submit(function(event){
 		event.preventDefault();
-		var $a = $('#email').val();
-		var $b = $('#password').val();
+		var $a = document.forms["logIn-form"]["email"].value;
+		var $b = document.forms["logIn-form"]["password"].value;
 		if ($a == '' || $b == ''){
 			$('.results').empty().append('Please provide Email and Password');
 		}

@@ -12,7 +12,3 @@
 <input type="email" name="email" id="email" required="required"><br />
 <input type="submit" name="submit" value="submit">
 </form>
-
-<div class="results">
-
-</div>
