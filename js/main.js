@@ -38,6 +38,9 @@ $(function(){
 		var $b = document.forms["logIn-form"]["password"].value;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 =======
 >>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 		if ($a ==null || $a == ''){
@@ -48,11 +51,14 @@ $(function(){
 			return false;
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		if ($a == '' || $b == ''){
 			$('.results').empty().append('Please provide Email and Password');
 		}
 >>>>>>> some tweaks in css, js, login and registration files
+=======
+>>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 =======
 >>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 		else {
