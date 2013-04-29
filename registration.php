@@ -12,10 +12,5 @@
 <input type="email" name="email" required="required"><br />
 <input type="submit" name="submit" value="submit">
 </form>
-<<<<<<< HEAD
-
 <div class="reg-error error">
-
 </div>
-=======
->>>>>>> some tweaks in css, js, login and registration files
