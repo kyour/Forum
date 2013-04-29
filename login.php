@@ -6,3 +6,5 @@
 <input type="text" name="password"><br />
 <input type="submit" name="submit" value="Sign In">
 </form>
+<div class="login-error error">
+</div>
