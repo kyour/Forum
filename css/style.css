@@ -2,14 +2,13 @@
 /* CSS Document */
 
 @import url('reset.css');
-
-body{
+body {
 	color:#333;
 	background: #feffe0;
 	font-size:100%;
 	text-align:center;
 }
-#wrapper{
+#wrapper {
 	max-width: 1000px;
 	margin:0 auto;
 	background:#f9f9f9;
@@ -18,7 +17,7 @@ body{
 .headerWrapper {
 	background:#303030;
 }
-header{
+header {
 	max-width:1000px;
 	margin:0 auto;
 }
@@ -26,20 +25,20 @@ header{
 	margin:0;
 	padding:0;
 }
-.nav li { 
-	display:inline; 
+.nav li {
+	display:inline;
 }
-.nav li a { 
-	float:left; 
-	padding:0.875rem; 
+.nav li a {
+	float:left;
+	padding:0.875rem;
 	color:#fff;
-	text-shadow:1px 1px 2px #000; 
-	font-size:14px; 
+	text-shadow:1px 1px 2px #000;
+	font-size:14px;
 	font-weight:bold;
 	text-decoration:none;
 }
-.nav li a:hover { 
-	background:#900; 
+.nav li a:hover {
+	background:#900;
 }
 .content {
 	padding:2rem;
@@ -73,33 +72,31 @@ header{
 	background:#cfcfcf;
 	border-top:1px solid #c0c0c0;
 }
-footer{
+footer {
 	max-width:1000px;
 	margin:0 auto;
 	background:#fff;
 	box-shadow:0 0 9px #c9c9c9;
 }
-
 .clearfix:after {
 	display:block;
 	content:'';
 	clear:both;
 }
-
 /*---form fields---*/
 label {
 	display:inline-block;
 	min-width:120px;
 	font-size:0.875rem;
 	line-height:2.5;
-	}
-input[type=text],input[type=email], input[type=file] {
+}
+input[type=text], input[type=email], input[type=file] {
 	padding:0.438rem;
 	line-height:2.5;
 	margin-bottom:0.438rem;
 	font-size:0.875rem;
-	}
-input[type=submit]{
+}
+input[type=submit] {
 	padding:0.438rem;
 	color:#fff;
 	background:#c00;
@@ -107,4 +104,9 @@ input[type=submit]{
 	border-radius:3px;
 	font-size:0.750rem;
 	font-weight:bold;
-	}
+}
+textarea {
+	padding:0.438rem;
+	margin-bottom:0.438rem;
+	font-size:0.875rem;
+}

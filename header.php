@@ -14,7 +14,7 @@
   <nav>
     <ul class="nav">
       <li><a href="home.php">Home</a></li>
-      <li><a href="cat.php">category</a></li>
+      <li><a href="cat.php">Category</a></li>
       <li><a href="#">First Menu</a></li>
       <li><a href="#">First Menu</a></li>
     </ul>
