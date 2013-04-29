@@ -43,9 +43,12 @@ $(function(){
 			$('.login-error').empty().append('Please provide Password');
 			return false;
 			}
+<<<<<<< HEAD
 		if ($a == '' || $b == ''){
 			$('.results').empty().append('Please provide Email and Password');
 		}
+=======
+>>>>>>> 96ad4896a530f3b03d559a55f3c2ac6c310a579f
 		else {
 			var data_string = $(this).serialize()
 			$.ajax({
