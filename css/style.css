@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('reset.css');
+
+body{
+	color:#333;
+	background: #feffe0;
+	font-size:100%;
+	text-align:center;
+}
+#wrapper{
+	max-width: 1000px;
+	margin:0 auto;
+	background:#f9f9f9;
+	text-align:left;
+}
+.headerWrapper {
+	background:#303030;
+}
+header{
+	max-width:1000px;
+	margin:0 auto;
+}
+.nav {
+	margin:0;
+	padding:0;
+}
+.nav li { 
+	display:inline; 
+}
+.nav li a { 
+	float:left; 
+	padding:0.875rem; 
+	color:#fff;
+	text-shadow:1px 1px 2px #000; 
+	font-size:14px; 
+	font-weight:bold;
+	text-decoration:none;
+}
+.nav li a:hover { 
+	background:#900; 
+}
+.content {
+	padding:2rem;
+	border:1px solid #ddd;
+	box-shadow:0 0 7px #c9c9c9;
+}
+.full {
+	width:100%;
+}
+.half {
+	width: 48.1%;
+}
+.oneThird {
+	width: 30.85%;
+}
+.twoThird {
+	width:65.45%;
+}
+.quarter {
+	width: 22.18%;
+}
+.half, .oneThird, .twoThird, .quarter {
+	float: left;
+	margin-right: 3.7%;
+	overflow:hidden;
+}
+.last {
+	margin-right:0;
+}
+.footerWrapper {
+	background:#cfcfcf;
+	border-top:1px solid #c0c0c0;
+}
+footer{
+	max-width:1000px;
+	margin:0 auto;
+	background:#fff;
+	box-shadow:0 0 9px #c9c9c9;
+}
+
+.clearfix:after {
+	display:block;
+	content:'';
+	clear:both;
+}
+
+/*---form fields---*/
+label {
+	display:inline-block;
+	min-width:120px;
+	font-size:0.875rem;
+	line-height:2.5;
+	}
+input[type=text],input[type=email], input[type=file] {
+	padding:0.438rem;
+	line-height:2.5;
+	margin-bottom:0.438rem;
+	font-size:0.875rem;
+	}
+input[type=submit]{
+	padding:0.438rem;
+	color:#fff;
+	background:#c00;
+	border:1px solid #900;
+	border-radius:3px;
+	font-size:0.750rem;
+	font-weight:bold;
+	}
