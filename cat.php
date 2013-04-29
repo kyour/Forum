@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 <div class="full">
-<form id="cat-form" enctype="multipart/form-data">
+<form id="cat-form" action="cat-exe.php" method="post" enctype="multipart/form-data">
 <input type="text" name="name"  /><br>
 <input name="picture" type="file" /><br />
 <textarea name="bio"></textarea><br>

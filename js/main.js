@@ -63,7 +63,7 @@ $(function(){
 /*-------------------------------------------Login Form Ends--------------------------------------------------*/
 
 /*-------------------------------------------Category Form Starts--------------------------------------------------*/
-	$('#cat-form').submit(function(event){
+	/*$('#cat-form').submit(function(event){
 		event.preventDefault();
 		var data_string = $(this).serialize()
 		$.ajax({
@@ -75,7 +75,7 @@ $(function(){
 				$('.results').empty().append(data);
 			}
 		});
-	})
+	})*/
 /*-------------------------------------------Category Form Ends--------------------------------------------------*/
 
 
