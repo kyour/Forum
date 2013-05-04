@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php include 'header.php';
 $query=mysql_query("SELECT * FROM category");
 =======
@@ -9,6 +10,10 @@ include ("header.php");
 
 $query=mysql_query("SELECT * FROM category WHERE cat_id = $_id ");
 >>>>>>> 16 new files commited
+=======
+<?php include 'header.php';
+$query=mysql_query("SELECT * FROM category");
+>>>>>>> 9dd5d215775ed0396a9c8a00a921722f9a2a2fe7
 
 while ($rowshow=mysql_fetch_array($query)){
 	$_id = $rowshow["cat_id"];
@@ -21,9 +26,13 @@ while ($rowshow=mysql_fetch_array($query)){
 	echo $_name."<br>". $_id ."<img width='80' src='".$_pic."'><br>".$_bio."<br>".$_opinion."<br>".$_power."<br>".$_party;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 include 'footer.php';
 =======
 include ("topic.php");
 include ("footer.php");
 >>>>>>> 16 new files commited
+=======
+include 'footer.php';
+>>>>>>> 9dd5d215775ed0396a9c8a00a921722f9a2a2fe7
 ?>

@@ -1,9 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 include 'header.php';
 include ('includes/connection.php');
 >>>>>>> 16 new files commited
+=======
+>>>>>>> 9dd5d215775ed0396a9c8a00a921722f9a2a2fe7
 if(isset($_POST['email']) && isset($_POST['password'])){
 	$email=$_POST['email'];
 	$password=$_POST['password'];
