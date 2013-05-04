@@ -1,4 +1,5 @@
 <?php 
+include 'includes/connection.php';
 $_name=mysql_real_escape_string($_POST['name']);
 $_folder="uploads/";
 $_bio=mysql_real_escape_string($_POST['bio']);
