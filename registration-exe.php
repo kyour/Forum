@@ -1,7 +1,4 @@
-
 <?php
-include ('includes/connection.php');
-
 $_firstname=mysql_real_escape_string($_POST['first-name']);
 $_lastname=mysql_real_escape_string($_POST['last-name']);
 $_pass=mysql_real_escape_string($_POST['password']);

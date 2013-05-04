@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+<?php include 'includes/connection.php'; ?>
+
+=======
 <?php session_start(); ?>
+>>>>>>> 16 new files commited
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +21,11 @@
     <ul class="nav">
       <li><a href="home.php">Home</a></li>
       <li><a href="cat.php">Category</a></li>
+<<<<<<< HEAD
+      <li><a href="cat-list.php">categories</a></li>
+=======
       <li><a href="cat-list.php">Category List</a></li>
+>>>>>>> 16 new files commited
       <li><a href="#">First Menu</a></li>
     </ul>
   </nav>
