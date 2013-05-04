@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 include ('includes/connection.php');
 if(isset($_POST['email']) && isset($_POST['password'])){
 	$email=$_POST['email'];
@@ -8,10 +9,13 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		$row=mysql_fetch_array($query);
 		$dbemail=$row['user_email'];
 		$dbpassword=$row['user_password'];
+		$dbname=$row['user_firstname'];
 		$query_run=$query;
 		$query_num_rows = mysql_num_rows($query_run);
 		if($query_num_rows==1)
 		{
+		$_SESSION['loged_in'] = 1;
+		$_SESSION['user_name'] = $dbname;
 		echo 'True';
 		}
 		else

@@ -1,3 +1,8 @@
+<?php
+if(isset($_SESSION['loged_in'])){
+	return false;
+	}
+?>
 <h2>Login</h2>
 <form id="logIn-form" action="login-exe.php" method="post">
 <label>Email</label>

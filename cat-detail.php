@@ -1,8 +1,12 @@
 <?php
 include ("includes/connection.php");
-$query=mysql_query("SELECT * FROM category");
+include ("header.php");
+	$_id=$_GET['id'];// ye samj nai aya k yaha pe 'id' q likha ha
+
+$query=mysql_query("SELECT * FROM category WHERE cat_id = $_id ");
 
 while ($rowshow=mysql_fetch_array($query)){
+	$_id = $rowshow["cat_id"];
 	$_name = $rowshow["cat_name"];
 	$_pic = $rowshow["cat_picture"];
 	$_bio = $rowshow["cat_bio"];
@@ -11,4 +15,6 @@ while ($rowshow=mysql_fetch_array($query)){
 	$_party = $rowshow["cat_party"];
 	echo $_name."<br>"."<img width='80' src='".$_pic."'><br>".$_bio."<br>".$_opinion."<br>".$_power."<br>".$_party;
 }
+include ("topic.php");
+include ("footer.php");
 ?>

@@ -62,6 +62,42 @@ $(function(){
 	});// -------.submit function end
 /*-------------------------------------------Login Form Ends--------------------------------------------------*/
 
+/*-------------------------------------------Topic Form starts--------------------------------------------------*/
+$('#topic-form').submit(function(event){
+	event.preventDefault();
+	var data_string = $(this).serialize();
+	$.ajax({
+		cache: false,
+		type: "POST",
+		url: "topic-exe.php",
+		data: data_string,
+		success: function(data){
+			$('.topic-error').empty().append(data);
+			//alert(data)
+			}
+	});
+			$('input, textarea').val('');
+	});
+/*-------------------------------------------Topic Form ends--------------------------------------------------*/
+
+/*-------------------------------------------Post Form starts--------------------------------------------------*/
+$('#post-form').submit(function(event){
+	event.preventDefault();
+	var data_string = $(this).serialize();
+	$.ajax({
+		cache: false,
+		type: "POST",
+		url: "post-exe.php",
+		data: data_string,
+		success: function(data){
+			$('.post-error').empty().append(data);
+			//alert(data)
+			}
+	});
+			$('input, textarea').val('');
+	});
+/*-------------------------------------------Post Form ends--------------------------------------------------*/
+
 /*-------------------------------------------Category Form Starts--------------------------------------------------*/
 	/*$('#cat-form').submit(function(event){
 		event.preventDefault();
